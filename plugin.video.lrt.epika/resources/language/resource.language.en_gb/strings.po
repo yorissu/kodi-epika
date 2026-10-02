@@ -1,0 +1,260 @@
+
+# Kodi Media Center language file
+# Addon Name: LRT Epika
+# Addon id: plugin.video.lrt.epika
+msgid ""
+msgstr ""
+"Project-Id-Version: plugin.video.lrt.epika\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "Home"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Search"
+msgstr ""
+
+msgctxt "#30002"
+msgid "My List"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Continue watching"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Genres"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Log in"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Log out (%s)"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Next page"
+msgstr ""
+
+msgctxt "#30008"
+msgid "All"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Catalogue"
+msgstr ""
+
+msgctxt "#30010"
+msgid "New search"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Remove from search history"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Clear search history"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Watch trailer"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Add to My List"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Remove from My List"
+msgstr ""
+
+msgctxt "#30016"
+msgid "Added to My List"
+msgstr ""
+
+msgctxt "#30017"
+msgid "Removed from My List"
+msgstr ""
+
+msgctxt "#30020"
+msgid "Available until %s"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Audio"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Subtitles"
+msgstr ""
+
+msgctxt "#30027"
+msgid "dubbed"
+msgstr ""
+
+msgctxt "#30028"
+msgid "original"
+msgstr ""
+
+msgctxt "#30030"
+msgid "Log in to LRT Epika"
+msgstr ""
+
+msgctxt "#30031"
+msgid "1. On your phone or computer open [B]epika.lrt.lt/ziureti-tv[/B] and log in."
+msgstr ""
+
+msgctxt "#30032"
+msgid "2. Enter this code:  [B]%s[/B]"
+msgstr ""
+
+msgctxt "#30033"
+msgid "The code has expired. Get a new code?"
+msgstr ""
+
+msgctxt "#30034"
+msgid "Logged in %s"
+msgstr ""
+
+msgctxt "#30035"
+msgid "Log out of LRT Epika on this device?"
+msgstr ""
+
+msgctxt "#30036"
+msgid "Logged out"
+msgstr ""
+
+msgctxt "#30037"
+msgid "This needs an LRT Epika login. Log in now?"
+msgstr ""
+
+msgctxt "#30038"
+msgid "Your session has ended (this device may have been removed on the website). Please log in again."
+msgstr ""
+
+msgctxt "#30040"
+msgid "Epika error: %s"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Network error. Check the internet connection."
+msgstr ""
+
+msgctxt "#30043"
+msgid "Nothing found"
+msgstr ""
+
+msgctxt "#30044"
+msgid "Search LRT Epika"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Cache cleared"
+msgstr ""
+
+msgctxt "#30046"
+msgid "This list is empty"
+msgstr ""
+
+msgctxt "#30047"
+msgid "Something went wrong. Details are in the Kodi log."
+msgstr ""
+
+msgctxt "#30048"
+msgid "Log in first: choose Log in in the LRT Epika menu."
+msgstr ""
+
+msgctxt "#30100"
+msgid "Account"
+msgstr ""
+
+msgctxt "#30101"
+msgid "Log in (pair this device with a code)"
+msgstr ""
+
+msgctxt "#30102"
+msgid "Log out"
+msgstr ""
+
+msgctxt "#30110"
+msgid "Content"
+msgstr ""
+
+msgctxt "#30111"
+msgid "Load full details for every title"
+msgstr ""
+
+msgctxt "#30112"
+msgid "Titles per page in the catalogue"
+msgstr ""
+
+msgctxt "#30113"
+msgid "Catalogue order"
+msgstr ""
+
+msgctxt "#30114"
+msgid "Newest first"
+msgstr ""
+
+msgctxt "#30115"
+msgid "Year, newest first"
+msgstr ""
+
+msgctxt "#30116"
+msgid "Year, oldest first"
+msgstr ""
+
+msgctxt "#30117"
+msgid "Title A–Z"
+msgstr ""
+
+msgctxt "#30118"
+msgid "Website language"
+msgstr ""
+
+msgctxt "#30119"
+msgid "Lithuanian"
+msgstr ""
+
+msgctxt "#30120"
+msgid "Playback"
+msgstr ""
+
+msgctxt "#30121"
+msgid "Show subtitles when available"
+msgstr ""
+
+msgctxt "#30122"
+msgid "Install Widevine (needed for playback)"
+msgstr ""
+
+msgctxt "#30123"
+msgid "InputStream Helper information"
+msgstr ""
+
+msgctxt "#30127"
+msgid "English"
+msgstr ""
+
+msgctxt "#30130"
+msgid "Advanced"
+msgstr ""
+
+msgctxt "#30131"
+msgid "Keep title details for (hours)"
+msgstr ""
+
+msgctxt "#30132"
+msgid "Clear cache"
+msgstr ""
+
+msgctxt "#30133"
+msgid "Debug logging"
+msgstr ""

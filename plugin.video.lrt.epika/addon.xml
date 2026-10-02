@@ -1,0 +1,27 @@
+
+<addon id="plugin.video.lrt.epika" name="LRT Epika" version="0.0.0" provider-name="yorissu">
+	<!-- version is a placeholder: build_zip.py writes the one from the git tag into the zip -->
+	<requires>
+		<import addon="xbmc.python" version="3.0.1"/>
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+		<import addon="script.module.inputstreamhelper" version="0.6.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">LRT Epika - Lithuanian films and series</summary>
+		<summary lang="lt_LT">LRT Epika - filmai ir serialai lietuviškai</summary>
+		<description lang="en_GB">Unofficial client for epika.lrt.lt. Browse the same sections as the website, search, keep My List and watch with full metadata. Log in by entering a code at epika.lrt.lt/ziureti-tv – no password is stored in Kodi.</description>
+		<description lang="lt_LT">Neoficialus epika.lrt.lt klientas. Tos pačios skiltys kaip svetainėje, paieška, Mano sąrašas ir išsami informacija. Prisijungiama įvedus kodą epika.lrt.lt/ziureti-tv – slaptažodis Kodi nesaugomas.</description>
+		<disclaimer lang="en_GB">Not affiliated with LRT. Requires a free LRT Epika account. Some content is available only in Lithuania.</disclaimer>
+		<platform>all</platform>
+		<language>lt</language>
+		<license>MIT</license>
+		<website>https://github.com/yorissu/kodi-epika</website>
+		<source>https://github.com/yorissu/kodi-epika</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>

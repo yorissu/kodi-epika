@@ -1,0 +1,7 @@
+
+dist/
+site/
+zips/
+.venv
+*.pyc
+__pycache__/

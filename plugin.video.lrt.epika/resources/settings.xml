@@ -1,0 +1,130 @@
+
+<settings version="1">
+	<section id="plugin.video.lrt.epika">
+		<category id="account" label="30100">
+			<group id="1">
+				<setting id="login" type="action" label="30101">
+					<level>0</level>
+					<data>RunPlugin(plugin://plugin.video.lrt.epika/?action=login)</data>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+				</setting>
+				<setting id="logout" type="action" label="30102">
+					<level>0</level>
+					<data>RunPlugin(plugin://plugin.video.lrt.epika/?action=logout)</data>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="content" label="30110">
+			<group id="1">
+				<setting id="full_details" type="boolean" label="30111">
+					<level>0</level>
+					<default>true</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="page_size" type="integer" label="30112">
+					<level>0</level>
+					<default>50</default>
+					<constraints>
+						<minimum>25</minimum>
+						<step>25</step>
+						<maximum>100</maximum>
+					</constraints>
+					<control type="spinner" format="integer"/>
+				</setting>
+				<setting id="sort" type="string" label="30113">
+					<level>0</level>
+					<default>newest</default>
+					<constraints>
+						<options>
+							<option label="30114">newest</option>
+							<option label="30115">year_desc</option>
+							<option label="30116">year_asc</option>
+							<option label="30117">title</option>
+						</options>
+					</constraints>
+					<control type="spinner" format="string"/>
+				</setting>
+				<setting id="language" type="string" label="30118">
+					<level>0</level>
+					<default>LIT</default>
+					<constraints>
+						<options>
+							<option label="30119">LIT</option>
+							<option label="30127">ENG</option>
+						</options>
+					</constraints>
+					<control type="spinner" format="string"/>
+				</setting>
+			</group>
+		</category>
+		<category id="playback" label="30120">
+			<group id="1">
+				<setting id="subtitles" type="boolean" label="30121">
+					<level>0</level>
+					<default>true</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="widevine" type="action" label="30122">
+					<level>0</level>
+					<data>RunScript(script.module.inputstreamhelper,widevine_install)</data>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+				</setting>
+				<setting id="ish_info" type="action" label="30123">
+					<level>0</level>
+					<data>RunScript(script.module.inputstreamhelper,info)</data>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="advanced" label="30130">
+			<group id="1">
+				<setting id="cache_hours" type="integer" label="30131">
+					<level>0</level>
+					<default>12</default>
+					<constraints>
+						<minimum>1</minimum>
+						<step>1</step>
+						<maximum>168</maximum>
+					</constraints>
+					<control type="slider" format="integer"/>
+				</setting>
+				<setting id="clear_cache" type="action" label="30132">
+					<level>0</level>
+					<data>RunPlugin(plugin://plugin.video.lrt.epika/?action=clear_cache)</data>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+				</setting>
+				<setting id="debug" type="boolean" label="30133">
+					<level>0</level>
+					<default>false</default>
+					<control type="toggle"/>
+				</setting>
+			</group>
+		</category>
+	</section>
+</settings>

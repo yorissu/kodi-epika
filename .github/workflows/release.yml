@@ -1,0 +1,85 @@
+
+# Push a tag to release:
+#   vX.Y.Z           tested release: GitHub release + published to the Kodi repository (auto-update)
+#   vX.Y.Z-<suffix>  pre-release (e.g. v0.3.0-rc.2): GitHub pre-release with the zip only, never offered to Kodi
+# Run manually to rebuild the Kodi repository site from the existing releases
+# (e.g. after deleting a broken release).
+
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      prerelease: ${{ steps.build.outputs.prerelease }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Tests
+        run: python -m unittest discover -s tests
+      - name: Build zips (plugin version from the tag)
+        id: build
+        run: python build_zip.py --tag "$GITHUB_REF_NAME"
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.build.outputs.version }}
+          PRERELEASE: ${{ steps.build.outputs.prerelease }}
+        run: |
+          flags=()
+          if [ "$PRERELEASE" = "true" ]; then flags+=(--prerelease); fi
+          gh release create "$GITHUB_REF_NAME" dist/*.zip dist/SHA256SUMS \
+            --title "LRT Epika $VERSION" --generate-notes --verify-tag "${flags[@]}"
+
+  pages:
+    needs: release
+    if: always() && (github.event_name == 'workflow_dispatch' || (needs.release.result == 'success' && needs.release.outputs.prerelease == 'false'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect every released zip
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p zips
+          gh release list --limit 500 --exclude-drafts --exclude-pre-releases --json tagName --jq '.[].tagName' |
+          while read -r tag; do
+            gh release download "$tag" --dir zips --clobber \
+              --pattern 'plugin.video.lrt.epika-*.zip' --pattern 'repository.lrt.epika-*.zip'
+          done
+          ls -l zips
+      - name: Build the Kodi repository site
+        run: python build_repo.py zips site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

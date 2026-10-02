@@ -1,0 +1,260 @@
+
+# Kodi Media Center language file
+# Addon Name: LRT Epika
+# Addon id: plugin.video.lrt.epika
+msgid ""
+msgstr ""
+"Project-Id-Version: plugin.video.lrt.epika\n"
+"Language: lt_LT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "Home"
+msgstr "Pradžia"
+
+msgctxt "#30001"
+msgid "Search"
+msgstr "Paieška"
+
+msgctxt "#30002"
+msgid "My List"
+msgstr "Mano sąrašas"
+
+msgctxt "#30003"
+msgid "Continue watching"
+msgstr "Tęskite peržiūrą"
+
+msgctxt "#30004"
+msgid "Genres"
+msgstr "Žanrai"
+
+msgctxt "#30005"
+msgid "Log in"
+msgstr "Prisijungti"
+
+msgctxt "#30006"
+msgid "Log out (%s)"
+msgstr "Atsijungti (%s)"
+
+msgctxt "#30007"
+msgid "Next page"
+msgstr "Kitas puslapis"
+
+msgctxt "#30008"
+msgid "All"
+msgstr "Visi"
+
+msgctxt "#30009"
+msgid "Catalogue"
+msgstr "Katalogas"
+
+msgctxt "#30010"
+msgid "New search"
+msgstr "Nauja paieška"
+
+msgctxt "#30011"
+msgid "Remove from search history"
+msgstr "Pašalinti iš paieškos istorijos"
+
+msgctxt "#30012"
+msgid "Clear search history"
+msgstr "Išvalyti paieškos istoriją"
+
+msgctxt "#30013"
+msgid "Watch trailer"
+msgstr "Žiūrėti anonsą"
+
+msgctxt "#30014"
+msgid "Add to My List"
+msgstr "Pridėti į Mano sąrašą"
+
+msgctxt "#30015"
+msgid "Remove from My List"
+msgstr "Pašalinti iš Mano sąrašo"
+
+msgctxt "#30016"
+msgid "Added to My List"
+msgstr "Pridėta į Mano sąrašą"
+
+msgctxt "#30017"
+msgid "Removed from My List"
+msgstr "Pašalinta iš Mano sąrašo"
+
+msgctxt "#30020"
+msgid "Available until %s"
+msgstr "Galima žiūrėti iki %s"
+
+msgctxt "#30021"
+msgid "Audio"
+msgstr "Garsas"
+
+msgctxt "#30022"
+msgid "Subtitles"
+msgstr "Subtitrai"
+
+msgctxt "#30027"
+msgid "dubbed"
+msgstr "įgarsinta"
+
+msgctxt "#30028"
+msgid "original"
+msgstr "originalo kalba"
+
+msgctxt "#30030"
+msgid "Log in to LRT Epika"
+msgstr "Prisijungimas prie LRT Epika"
+
+msgctxt "#30031"
+msgid "1. On your phone or computer open [B]epika.lrt.lt/ziureti-tv[/B] and log in."
+msgstr "1. Telefone ar kompiuteryje atidarykite [B]epika.lrt.lt/ziureti-tv[/B] ir prisijunkite."
+
+msgctxt "#30032"
+msgid "2. Enter this code:  [B]%s[/B]"
+msgstr "2. Įveskite šį kodą:  [B]%s[/B]"
+
+msgctxt "#30033"
+msgid "The code has expired. Get a new code?"
+msgstr "Kodo galiojimas baigėsi. Gauti naują kodą?"
+
+msgctxt "#30034"
+msgid "Logged in %s"
+msgstr "Prisijungta %s"
+
+msgctxt "#30035"
+msgid "Log out of LRT Epika on this device?"
+msgstr "Atsijungti nuo LRT Epika šiame įrenginyje?"
+
+msgctxt "#30036"
+msgid "Logged out"
+msgstr "Atsijungta"
+
+msgctxt "#30037"
+msgid "This needs an LRT Epika login. Log in now?"
+msgstr "Tam reikia prisijungti prie LRT Epika. Prisijungti dabar?"
+
+msgctxt "#30038"
+msgid "Your session has ended (this device may have been removed on the website). Please log in again."
+msgstr "Sesija baigėsi (galbūt šis įrenginys pašalintas svetainėje). Prisijunkite iš naujo."
+
+msgctxt "#30040"
+msgid "Epika error: %s"
+msgstr "Epika klaida: %s"
+
+msgctxt "#30041"
+msgid "Network error. Check the internet connection."
+msgstr "Tinklo klaida. Patikrinkite interneto ryšį."
+
+msgctxt "#30043"
+msgid "Nothing found"
+msgstr "Nieko nerasta"
+
+msgctxt "#30044"
+msgid "Search LRT Epika"
+msgstr "Paieška LRT Epika"
+
+msgctxt "#30045"
+msgid "Cache cleared"
+msgstr "Talpykla išvalyta"
+
+msgctxt "#30046"
+msgid "This list is empty"
+msgstr "Šis sąrašas tuščias"
+
+msgctxt "#30047"
+msgid "Something went wrong. Details are in the Kodi log."
+msgstr "Įvyko klaida. Išsami informacija – Kodi žurnale."
+
+msgctxt "#30048"
+msgid "Log in first: choose Log in in the LRT Epika menu."
+msgstr "Pirmiausia prisijunkite: LRT Epika meniu pasirinkite „Prisijungti“."
+
+msgctxt "#30100"
+msgid "Account"
+msgstr "Paskyra"
+
+msgctxt "#30101"
+msgid "Log in (pair this device with a code)"
+msgstr "Prisijungti (susieti įrenginį kodu)"
+
+msgctxt "#30102"
+msgid "Log out"
+msgstr "Atsijungti"
+
+msgctxt "#30110"
+msgid "Content"
+msgstr "Turinys"
+
+msgctxt "#30111"
+msgid "Load full details for every title"
+msgstr "Įkelti išsamią informaciją kiekvienam pavadinimui"
+
+msgctxt "#30112"
+msgid "Titles per page in the catalogue"
+msgstr "Pavadinimų puslapyje (katalogas)"
+
+msgctxt "#30113"
+msgid "Catalogue order"
+msgstr "Katalogo rikiavimas"
+
+msgctxt "#30114"
+msgid "Newest first"
+msgstr "Naujausi pirmiau"
+
+msgctxt "#30115"
+msgid "Year, newest first"
+msgstr "Metai, naujausi pirmiau"
+
+msgctxt "#30116"
+msgid "Year, oldest first"
+msgstr "Metai, seniausi pirmiau"
+
+msgctxt "#30117"
+msgid "Title A–Z"
+msgstr "Pavadinimas A–Ž"
+
+msgctxt "#30118"
+msgid "Website language"
+msgstr "Svetainės kalba"
+
+msgctxt "#30119"
+msgid "Lithuanian"
+msgstr "Lietuvių"
+
+msgctxt "#30120"
+msgid "Playback"
+msgstr "Atkūrimas"
+
+msgctxt "#30121"
+msgid "Show subtitles when available"
+msgstr "Rodyti subtitrus, kai jie yra"
+
+msgctxt "#30122"
+msgid "Install Widevine (needed for playback)"
+msgstr "Įdiegti Widevine (reikia atkūrimui)"
+
+msgctxt "#30123"
+msgid "InputStream Helper information"
+msgstr "InputStream Helper informacija"
+
+msgctxt "#30127"
+msgid "English"
+msgstr "Anglų"
+
+msgctxt "#30130"
+msgid "Advanced"
+msgstr "Išplėstiniai"
+
+msgctxt "#30131"
+msgid "Keep title details for (hours)"
+msgstr "Informacijos saugojimo laikas (valandomis)"
+
+msgctxt "#30132"
+msgid "Clear cache"
+msgstr "Išvalyti talpyklą"
+
+msgctxt "#30133"
+msgid "Debug logging"
+msgstr "Išsamus žurnalas (derinimui)"
