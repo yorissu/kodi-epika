@@ -72,7 +72,9 @@ GitHub Actions does the rest:
 
   It runs the tests, builds the zips with the tag's version and creates the GitHub release with the zips and `SHA256SUMS`. For a normal release (`vX.Y.Z`) it also rebuilds the Kodi repository site on GitHub Pages (`build_repo.py`), so every Kodi gets the update. A pre-release (`vX.Y.Z-<suffix>`) only becomes a GitHub pre-release: install its zip by hand to test it.
 - **Pulling a broken release:** delete it on GitHub, then Actions → Release → **Run workflow** to rebuild the site without it.
-- **One-time setup** of the GitHub repo: Settings → Pages → Source: **GitHub Actions**.
+- **One-time setup** of the GitHub repo:
+  1. Settings → Pages → Source: **GitHub Actions**.
+  2. Settings → Environments → **github-pages** → Deployment branches and tags → **Add deployment branch or tag rule** → Ref type **Tag**, pattern `v*`. Without it GitHub only lets `main` deploy, and releases (which run from their tag) fail at the Pages step with "not allowed to deploy to github-pages due to environment protection rules".
 
 ## License
 

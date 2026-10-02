@@ -1,40 +1,12 @@
 
 LRT Epika for Kodi – to do
 
-== Do (setup, in this order) ==
-
-[ ] Push main, check the CI workflow passes on GitHub.
-[ ] Tag and push v0.1.0, check the Release workflow: GitHub release with zips + SHA256SUMS,
-	Pages deploy, https://yorissu.github.io/kodi-epika/ shows the repository zip.
-[ ] On the Pi: uninstall the old hand-installed LRT Epika (plugin.video.epika), then follow
-	readme.md → Install, and pair again.
-
-== Verify on the Pi (first time only these were not testable off-device) ==
-
-[ ] Kodi's file manager lists repository.lrt.epika-1.0.0.zip from the Pages address.
-[ ] Repository install works with <hashes>sha256</hashes>. If Kodi reports a checksum/hash
-	error, switch repository.lrt.epika/addon.xml to <hashes>true</hashes> and make build_repo.py
-	write .md5 files instead of .sha256 (or drop <hashes>).
-[ ] addon.xml / settings.xml without the <?xml?> declaration load fine (add-on installs, settings open).
-[ ] strings.po with the leading empty line: menu labels and settings show text, not blanks.
-[ ] Playback of the 0.1.0 release build: film, episode, trailer; Lithuanian subtitles switch on.
-[ ] Log in / Log out from the LRT Epika menu: no "failed to retrieve directory" error.
-[ ] Search with the remote; context menu: trailer, Add to / Remove from My List.
-[ ] Search results: episodes show series name and season.
-[ ] Name of the version-switch button (readme says "Update", or "Versions") – fix readme if needed.
-[ ] After a second release (e.g. v0.1.1): Kodi auto-updates; switching back to 0.1.0 works;
-	the Auto-update toggle keeps it there.
-[ ] If LibreELEC moves to Kodi 22: playback with the new inputstream.adaptive.drm property.
-
 == Implement later (ideas, not started) ==
-
 [ ] Report watch progress to Epika, so Continue watching and resume points stay in sync
 	with the website and other devices (now Continue watching only reflects the website).
 [ ] QR code in the pairing dialog (opens epika.lrt.lt/ziureti-tv?code=…, which fills the code in).
-[ ] Recommendation rows ("Rekomenduojame jums") – served by an external recommender, skipped now.
-[ ] Live channels, if Epika ever adds them (products/lives is empty today).
 [ ] Fanart for the add-on (the Kodi add-on checker suggests one).
-[ ] Show subtitles automatically only when the audio isn't Lithuanian.
 [ ] Shorter install address: custom domain for GitHub Pages.
 [ ] Kodi add-on checker for repository.lrt.epika in CI (it hangs locally fetching the not-yet-live URLs).
 [ ] Maybe later: submit to the official Kodi repository (check Epika's terms of use first).
+[ ] Update readme to satte that after adding the Kodi source for Epika repo, the plugin shall be downloaded not fro mzip but from repository.
